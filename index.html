@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Einladung zu unserem Date 💫</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' blob:'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; base-uri 'none'; frame-ancestors 'none'; connect-src 'self'; form-action 'none'">
+  <meta name="theme-color" content="#1a120c">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <canvas id="fx" class="fx" aria-hidden="true"></canvas>
+
+  <main class="wrap">
+    <section class="card">
+      <h1>Einladung zu unserem Date <span class="spark">💫</span></h1>
+
+      <p class="lede">
+        Am <b>8. oder 9. November</b> ist unser Tag.<br/>
+        Ich hol dich in <b>Feldkirch</b> ab,<br/>
+        und dann geht’s gemeinsam ins <b>Lindt – Home of Chocolate 🍫</b>.<br/>
+        Einfach wir zwei, ganz ohne Stress.<br/>
+        Ich freu mich auf dich.
+      </p>
+
+      <div class="countdown" id="countdown">
+        <div><span id="cd-d">00</span><label>Tage</label></div>
+        <div><span id="cd-h">00</span><label>Stunden</label></div>
+        <div><span id="cd-m">00</span><label>Minuten</label></div>
+        <div><span id="cd-s">00</span><label>Sekunden</label></div>
+      </div>
+
+      <div class="controls">
+        <button id="love" class="btn">Ich freu mich auch 💌</button>
+        <button id="mute" class="btn ghost">🎹 Musik: an</button>
+      </div>
+      <p class="hint">Tippe irgendwo, falls dein Handy die Musik erst nach einer Berührung erlaubt.</p>
+    </section>
+
+    <footer>für dich ✨</footer>
+  </main>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
