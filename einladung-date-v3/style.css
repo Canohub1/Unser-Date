@@ -1,0 +1,42 @@
+:root{
+  --bg:#130d09; --bg2:#1a120c;
+  --cream:#f4e9da; --gold:#d9b36f; --choco:#5a3b27; --rose:#d88aa2;
+}
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{
+  margin:0; background:
+    radial-gradient(900px 600px at 80% -10%, #3b291c 0%, var(--bg2) 60%) no-repeat,
+    var(--bg);
+  color:var(--cream);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial;
+  overflow:hidden;
+}
+.fx{position:fixed; inset:0; z-index:0; pointer-events:none}
+.wrap{position:relative; z-index:1; display:grid; place-items:center; padding:18px}
+.card{
+  width:min(820px, calc(100% - 22px));
+  border-radius:22px;
+  padding:22px;
+  background: rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow: 0 20px 60px rgba(0,0,0,.55);
+  backdrop-filter: blur(8px);
+  animation: pop .7s ease both;
+}
+@keyframes pop{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none}}
+h1{margin:4px 0 8px 0; font-size: clamp(28px, 5vw, 46px); letter-spacing:.2px}
+.spark{filter: drop-shadow(0 0 8px rgba(217,179,111,.6))}
+.lede{line-height:1.7; font-size: clamp(18px, 2.4vw, 20px)}
+.countdown{display:grid; grid-template-columns: repeat(4, 1fr); gap:10px; margin:14px 0 6px}
+.countdown div{display:grid; place-items:center; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:10px}
+.countdown span{font-size: clamp(20px, 6vw, 36px); font-weight:900; color:var(--gold); text-shadow:0 0 10px rgba(217,179,111,.35)}
+.countdown label{font-size:12px; color:#e9decf}
+.controls{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+.btn{appearance:none; border:none; cursor:pointer; font-weight:900; letter-spacing:.3px;
+  padding:12px 16px; border-radius:999px;
+  background: linear-gradient(90deg, #8b5e3c, #d9b36f);
+  color:#130d09; box-shadow: 0 14px 28px rgba(217,179,111,.28)}
+.btn.ghost{background:transparent; color:var(--cream); border:1px solid rgba(255,255,255,.18); box-shadow:none}
+footer{position:fixed; left:0; right:0; bottom:8px; text-align:center; color:#e9decf}
+.hint{color:#e9decf; opacity:.85; font-size:12px; margin-top:6px}
